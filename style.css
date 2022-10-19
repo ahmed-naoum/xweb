@@ -184,7 +184,7 @@ ul {
 a, a:active, a:focus, a:hover {
   outline: none;
   text-decoration: none;
-  color: #232323;
+  color: #ffffff;
 }
 
 a:hover {
@@ -376,7 +376,6 @@ input {
 }
 
 .gradient-bg {
-  background-image: linear-gradient(90deg, rgba(74,196,243,1) 23%, rgba(9,168,228,1) 100%);
   background-color: #FF3C3C;
 }
 
@@ -1439,7 +1438,7 @@ body,
 }
 
 .banner-area.bg-gradient {
-  background: linear-gradient(180deg, #0D0D0D 0%, #220808 52.6%, #0D0D0D 100%);
+  background: linear-gradient(180deg, #0D0D0D 0%, #0D0D0D 52.6%, #0D0D0D 100%);
 }
 
 
@@ -1456,6 +1455,7 @@ body,
     transform: rotate(-45deg);
     background: #FF3C3C;
     z-index: -1;
+    filter: blur(110px);
   }
 }
 
@@ -4074,7 +4074,7 @@ ul.achivement li .medium {
 =================================================================== */
 
 .blog-area .single-item {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .blog-area .blog-grid {
@@ -4082,7 +4082,7 @@ ul.achivement li .medium {
 }
 
 .blog-area .item {
-    background: #ffffff;
+    background: #171717e0;
     margin-bottom: 30px;
     box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 10%);
     border-radius: 8px;
@@ -4090,6 +4090,7 @@ ul.achivement li .medium {
 
 .blog-area .item:last-child {
     margin-bottom: 0;
+    backdrop-filter: blur(15px);
 }
 
 .blog-area .item .info {
@@ -4129,7 +4130,7 @@ ul.achivement li .medium {
     font-weight: 700;
     margin-bottom: 15px;
     text-align: center;
-    box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #232323;
 }
 
 .blog-area .item .date i {
@@ -4153,7 +4154,6 @@ ul.achivement li .medium {
 
 .blog-area .thumb {
     position: relative;
-    padding: 15px;
     padding-bottom: 0;
 }
 
