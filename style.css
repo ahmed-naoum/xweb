@@ -470,6 +470,7 @@ input {
 .default-padding.bottom-less {
   padding-top: 120px;
   padding-bottom: 90px;
+  z-index: 1;
 }
 
 .default-padding-bottom.bottom-less {
@@ -879,7 +880,6 @@ button, button:focus {
 }
 
 .site-heading {
-  margin-bottom: 60px;
   overflow: hidden;
   margin-top: -5px;
 }
@@ -2509,7 +2509,7 @@ body,
 
 .advanced-features-area .af-items .item .icon::after {
     position: absolute;
-    left: 0;
+    left: -7px;
     top: -10px;
     content: "";
     height: 70px;

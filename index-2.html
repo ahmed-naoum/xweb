@@ -27,6 +27,7 @@
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
+
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -429,15 +430,82 @@
 
     <!-- Start Team 
     ============================================= -->
+    <style>
+        
+        .section {
+  color: #fff; }
+  .section .top-side {
+    text-align: center; }
+    .section .top-side .title {
+      font-weight: 500;
+      font-size: 15px;
+      display: inline-block; }
+      .section .top-side .title:after {
+        content: '';
+        display: block;
+        width: 50%;
+        border-bottom: 1px solid #494949;
+        margin: 8px auto; }
+    .section .top-side h2 {
+      font-weight: 700; }
+  .section.portfolio .filters {
+    text-align: center;
+    margin-top: 50px; }
+    .section.portfolio .filters ul {
+      padding: 0; }
+      .section.portfolio .filters ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 20px 30px;
+        cursor: pointer;
+        position: relative; }
+        .section.portfolio .filters ul li:after {
+          content: '';
+          display: block;
+          width: calc(0% - 60px);
+          position: absolute;
+          height: 2px;
+          background: #ff3c3c;
+          transition: width 350ms ease-out; }
+        .section.portfolio .filters ul li:hover:after {
+          width: calc(100% - 60px);
+          transition: width 350ms ease-out; }
+        .section.portfolio .filters ul li.active:after {
+          width: calc(100% - 60px); }
+  .section.portfolio .filters-content {
+    margin-top: 50px; }
+    .section.portfolio .filters-content .show {
+        display: block;
+      visibility: visible;
+      transition: all 350ms; }
+    .section.portfolio .filters-content .hide {
+      display: none;
+      visibility: hidden;
+      transition: all 350ms; }
+    .section.portfolio .filters-content .item {
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      .section.portfolio .filters-content .item .p-inner {
+        padding: 20px 30px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+        .section.portfolio .filters-content .item .p-inner h5 {
+          font-size: 15px; }
+        .section.portfolio .filters-content .item .p-inner .cat {
+          font-size: 13px; }
+      .section.portfolio .filters-content .item img {
+        width: 100%; }
+
+        </style>
     <div id="team" class="team-area bg-gray default-padding bottom-less">
         <!-- Shape -->
-        <div class="fixed-shape" style="background-image: url(assets/img/shape/5.png);"></div>
+        <div class="fixed-shape" style="background-image: url(assets/img/shape/5.png);z-index: -1;"></div>
         <!-- End Shape -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>Innovative Team</h2>
+                        <h2>Our Works</h2>
                         <div class="devider"></div>
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
@@ -446,99 +514,156 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="team-items">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+        <section class="portfolio section">
+            <div class="container">
+              <div class="filters">
+                <ul>
+                  <li class="active" data-filter="*">All</li>
+                  <li data-filter="corporate">Corporate</li>
+                  <li data-filter="personal">Personal</li>
+                  <li data-filter="agency">Agency</li>
+                  <li data-filter="portal">Portal</li>
+                </ul>
+              </div>
+              
+              <div class="filters-content">
+                <div class="row grid">
+                    <div class="col-sm-4 all "data-item="corporate">
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle" class="share-toggle" hidden>
-                                    <label for="toggle" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Ahem Natasha</h4>
-                                <span>Operations officer</span>
-                            </div>
+                          <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                      </div>
+                      <div class="col-sm-4 all "data-item="corporate">
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle2" class="share-toggle" hidden>
-                                    <label for="toggle2" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Devid mark</h4>
-                                <span>Graphic designer</span>
-                            </div>
+                          <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                      </div>
+                      <div class="col-sm-4 all "data-item="corporate">
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle3" class="share-toggle" hidden>
-                                    <label for="toggle3" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Brave Hammam</h4>
-                                <span>Web developer</span>
-                            </div>
+                          <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
                         </div>
+                      </div>
+                      <div class="col-sm-4 all "data-item="corporate">
+                        <div class="item">
+                          <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
+                        </div>
+                      </div>
+                      <div class="col-sm-4 all "data-item="corporate">
+                        <div class="item">
+                          <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
+                        </div>
+                      </div>
+                  <div class="col-sm-4 all "data-item="personal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
                     </div>
-                    <!-- End Single Item -->
+                  </div>
+                  <div class="col-sm-4 all "data-item="personal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="personal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="personal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="personal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="agency">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="agency">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="agency">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="agency">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="agency">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="portal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="portal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="portal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="portal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 all "data-item="portal">
+                    <div class="item">
+                      <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
+                    </div>
+                  </div>
+                  
                 </div>
+              </div>
+              
             </div>
-        </div>
-    </div>
+          </section>
     <!-- End Team Area -->
+    <script>
+        
+let sortBtn = document.querySelectorAll('.filters ul li');
+let sortItem = document.querySelectorAll('.grid .all');
 
+for(let i = 0; i < sortBtn.length; i++){
+    sortBtn[i].addEventListener('click', function(){
+        for(let j = 0; j< sortBtn.length; j++){
+            sortBtn[j].classList.remove('active');
+        }
+
+        this.classList.add('active');
+        
+
+        let targetData = this.getAttribute('data-filter');
+
+        for(let k = 0; k < sortItem.length; k++){
+            sortItem[k].classList.remove('show');
+            sortItem[k].classList.add('hide');
+            
+            if(sortItem[k].getAttribute('data-item') == targetData || targetData == "*"){
+                sortItem[k].classList.remove('hide');
+                sortItem[k].classList.add('show');
+            }
+        }
+    });
+}
+
+        </script>
     <!-- Start Testimonials 
     ============================================= -->
     <div class="testimonials-area carousel-shadow default-padding-top">
@@ -1007,8 +1132,11 @@
     </footer>
     <!-- End Footer -->
     
-    <!-- jQuery Frameworks
+    <!--  Frameworks
     ============================================= -->
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
