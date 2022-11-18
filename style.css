@@ -880,6 +880,7 @@ button, button:focus {
 }
 
 .site-heading {
+  margin-bottom: 60px;
   overflow: hidden;
   margin-top: -5px;
 }
