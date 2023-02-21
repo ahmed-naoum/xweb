@@ -188,7 +188,7 @@ a, a:active, a:focus, a:hover {
 }
 
 a:hover {
-  color: #232323;
+  color: #FF3C3C;
 }
 
 a {
@@ -5507,7 +5507,7 @@ footer .f-items .f-item .address li strong {
 
 /* Footer Bottom */
 footer .footer-bottom {
-    border-top: 1px solid #283353;
+    border-top: 1px solid #912d2d;
     padding: 30px 0;
 }
 
